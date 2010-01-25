@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- resume.xml Copyright 2010 Matthew Levandowski <levandma@mail.gvsu.org> -->
+<!DOCTYPE resume PUBLIC "-//Sean Kelly//DTD Resume 1.5.1//EN"
+  "/usr/share/sgml/xml-resume-library/dtd/resume.dtd">
+
+<resume>
+  <header>
+    <name id="levandma">
+      <title>SPC</title>
+      <firstname>Matthew</firstname>
+      <middlenames>A</middlenames>
+      <surname>Levandowski</surname>
+    </name>
+    <address>
+      <street>10897 48th Ave</street>
+      <street>Suite BB5</street>
+      <city>Allendale</city>
+      <state>MI</state>
+      <zip>49401-8142</zip>
+    </address>
+    <contact>
+      <phone location="mobile">315.286.2383</phone>
+      <email>levandma@mail.gvsu.edu</email>
+      <url>http://www2.gvsu.edu/~levandma/</url>
+    </contact>
+  </header>
+  
+  <objective targets="information technology">
+  <para>Experienced military leader with documented success in responsible and challenging positions; seeking a position to gain work related experience in order to progress to higher level positions. Proven record of accomplishment, mission-critical decision making, time-management, and extensive teamwork abilities; with the ability to develop and implement effective action plans.  I have fulfilled a tour of duty in Afghanistan and four years of military service with an honorable discharge. 
+    </para>
+  </objective>
+
+  <history>
+      <job>
+      <jobtitle>Reserve Specialist / Truck Driver</jobtitle>
+      <employer>180th TC, US Army Reserve</employer>
+	<location>
+		<city>Muskegon</city>
+		<state>Michigan</state>
+	</location>      
+	<period>
+	<from><date>
+	    <month>August</month>
+	    <year>2009</year>
+	  </date></from>
+	<to>
+	  <present/>
+	</to>
+      </period>
+	<description>
+      <para>Train on various soldier skills and wheeled truck driving.  Plan and execute regular training excersises in support of the 180th Transportation Company.
+      </para>
+    </description>
+    </job>
+    
+    <job>
+      <jobtitle>Advertisement Setter</jobtitle>
+      <employer>Kohls Department Store</employer>
+	<location>
+ 		<city>Muskegon</city>
+		<state>Michigan</state>
+	</location>
+      <period>
+	<from><date>
+	    <month>November</month>
+	    <year>2009</year>
+	  </date></from>
+	<to>
+	  <present/>
+	</to>
+      </period>
+	<description>
+      <para>Work with other associates as a team to inventory and assess advertisement pricing and policies for entire store.  Assist customers and perform customer service tasks.
+      </para>
+    </description>
+    </job>
+
+    <job>
+      <jobtitle>Telecommunications Line Installer</jobtitle>
+      <employer>Shareco Communications</employer>
+      <location>
+		<city>Grand Rapids</city>
+		<state>Michigan</state>
+	  </location>
+      <period>
+	<from><date>
+	    <month>March</month>
+	    <year>2008</year>
+	  </date></from>
+	<to><date>
+	    <month>November</month>
+	    <year>2008</year>
+	  </date></to>
+      </period>
+      <description>
+	<para>As a line installer I was responsible for the installation, repair, and termination of various broadband cabling, including fiber optic splicing and installation, CAT5E, CAT6, 100-pair copper wire and various others. Also installed video cabling and security cameras. 
+	</para>
+      </description>
+    </job>
+    
+    <job>
+      <jobtitle>Communications Specialist OEF VII</jobtitle>
+      <employer>US Army</employer>
+      <location>
+		<country>Afghanistan</country>
+	</location>
+      <period>
+	<from><date>
+	    <month>February</month>
+	    <year>2006</year>
+	  </date></from>
+	<to><date>
+	    <month>July</month>
+	    <year>2007</year>
+	  </date></to>
+      </period>
+      <description>
+	<para>Deployed to <emphasis>Afghanistan</emphasis> in support of <emphasis>Operation Enduring Freedom</emphasis> as a communication specialist for a support battion with a company sized element with more than 150 employees.
+	</para>
+      </description>
+      <achievements>
+    <achievement>
+    Participated in the Joint Task Force as security for the occupying NATO and ISAF forces.
+    </achievement>
+    <achievement>
+    Participated in the successful repatriation of a US Soldier in a Search and Rescue Mission.
+    </achievement>
+    </achievements>
+    </job>
+    
+        <job>
+      <jobtitle>25F Network Switching Systems Operator / Maintainer </jobtitle>
+      <employer>10th Mountain Division, US Army</employer>
+      <location>
+		<city>Fort Drum</city>
+		<state>New York</state>
+	</location>
+      <period>
+	<from><date>
+	    <month>August</month>
+	    <year>2005</year>
+	  </date></from>
+	<to><date>
+	    <month>February</month>
+	    <year>2006</year>
+	  </date></to>
+      </period>
+      <description>
+	<para>Communications specialist directly responsible for the installation, maintenance, and repair of over <emphasis>half a million dollars</emphasis> of communication equipment for a company with over 150 soldiers.
+	</para>
+      </description>
+      <achievements>
+    <achievement>
+    Participated in sucessfull training at JROTC in Fort Polk, Loiusiana.
+    </achievement>
+    <achievement>
+    Conducted numerous training excersises successfully in light infantry.
+    </achievement>
+    </achievements>
+    </job>
+  </history>
+
+  <academics>
+    <degrees>
+	<degree>
+	<level>BA</level>
+	<major>Computer Science</major>
+	<minor>Information Systems</minor>
+	<period>
+	<from><date>
+	    <month>November</month>
+	    <year>2009</year>
+	  </date></from>
+	<to>
+	  <present/>
+	</to>
+      </period>
+	<institution>Grand Valley State University</institution>
+        <location><city>Allendale</city><state>MI</state></location>
+      <subjects>
+	<subject>
+		<title>Java Programming</title>
+		<result>A</result>
+      </subject>
+      <subject>
+		<title>Speech</title>
+		<result>A-</result>
+      </subject>
+	</subjects>
+	</degree>
+      <degree>
+	<level>ASA</level>
+	<annotation>Graduated after returning from the Army.</annotation>
+	<major>Associates in Science and Arts</major>
+	<date>
+	  <month>August</month>
+	  <year>2009</year>
+	</date>
+	<institution>Muskegon Community College</institution>
+	<location><city>Muskegon</city><state>MI</state></location>
+	<subjects>
+	<subject>
+		<title>Physics</title>
+		<result>A-</result>
+	</subject>
+	</subjects>
+      </degree>
+        <degree>
+	<level>HS Diploma</level>
+	<annotation> Graduated Top 15 in class.</annotation>
+	<date>
+	  <month>June</month>
+	  <year>2001</year>
+	</date>
+	<institution>Oakridge High School</institution>
+	<location><city>Muskegon</city><state>MI</state></location>
+	<gpa><score>3.5</score></gpa>
+      </degree>
+    </degrees>
+  </academics>
+
+<skillarea>
+  <title>Technical Skills</title>
+
+  <skillset>
+    <title>Programming Skills</title>
+    <skill level="intermediate">Java</skill>
+    <skill level="beginner">C++</skill>
+    <skill level="intermediate">XHTML/CSS</skill>
+    <skill level="beginner">Perl</skill>
+  </skillset>
+
+  <skillset>
+    <title>Telecommunication Skills</title>
+    <skill level="1 year experience">Fiber Optic Installation / Splicing</skill>
+    <skill level="intermediate">Cat5e and Cat6 Installation</skill>
+    <skill level="beginner">Network Routing Infrastructure</skill>
+  </skillset>
+
+  <skillset>
+    <title>Military Skillset</title>
+    <skill level="3 years experience">General Dynamics C4 - MSE</skill>
+    <skill>COMTECH MTS and BlueForce Tracker</skill>
+    <skill>SIPR and NIPR</skill>
+    <skill>SINCGARS Radios</skill>
+    <skill>SMART-T Satellite</skill>
+  </skillset>
+</skillarea>
+
+<referees>
+  <referee>
+    <name>
+	<title>SGT</title><firstname>Robert</firstname><surname>Bowyer</surname>
+    </name>
+    <organization>US Army Reserve</organization>
+    <contact>
+    <phone>231.571.8576</phone><email>bowyer.robert@us.army.mil</email>
+    </contact>
+  </referee>
+  <referee>
+    <name>
+	<title>SFC</title>
+	<firstname>Jamie</firstname>
+	<surname>Staten</surname>
+    </name>	
+    <organization>US Army</organization>
+    <contact>
+      <phone>315.286.8069</phone>
+      <email>staten.jamie@us.army.mil</email>
+    </contact>
+  </referee>
+  <referee>
+    <name>
+	<firstname>Shawn</firstname>
+	<surname>Zimmerman</surname>
+    </name>
+    <organization>Shareco</organization>
+    <contact>
+		<phone>616.292.0549</phone>
+		<email>shawnshawnz@aol.com</email>
+    </contact>
+  </referee>
+  <referee>
+    <name>
+	<firstname>Keith</firstname>
+	<surname>Hannah</surname>
+    </name>
+    <organization>Kohls</organization>
+    <contact>
+		<phone>231.740.3242</phone>
+		<email>keith1139@hotmail.com</email>
+    </contact>
+  </referee>
+</referees>
+
+<memberships>
+	<title>Academic Memberships:</title>
+ <membership>
+	<organization>National Honors Society</organization>
+</membership>
+<membership>
+	<organization>Student Veteran Organiation</organization>
+</membership>
+<membership>
+	<organization>CS Study Group</organization>
+</membership>
+<membership>
+	<organization>Total Trek Quest</organization>
+</membership>
+</memberships>
+
+<clearances>
+  <title>Security Clearance</title>
+  <clearance>
+    <level>Secret</level>
+    <organization>US Army</organization>
+    <date><year>2012</year></date>
+  </clearance>
+</clearances>
+
+<awards>
+  <title>Military Awards and Honors</title>
+  <award>
+    <title>Joint Service Achievement Medal</title>
+    <organization>Secretary of Defense</organization>
+    <date><month>May</month><year>2007</year></date>
+    <description>
+		<para>
+        Received for <emphasis>meritorious</emphasis> service, as a Guard Force Member for a Joint Task Force in support of Operation Enduring Freedom.
+        </para>
+    </description>
+  </award>
+  <award>
+    <title>ISAF Medal Afghanistan</title>
+    <organization>NATO</organization>
+    <date><year>2007</year></date>
+    <description>
+		<para>For support of the <emphasis>ISAF</emphasis> operations in Afghanistan.</para>
+    </description>
+  </award>
+  <award>
+	<title>Army Commendation Medal</title>
+	<organization>US Army</organization>
+	<date><year>2007</year></date>
+	<description>
+		<para>For <emphasis>outstanding</emphasis> performance in the 3rd Infantry Brigade Combat Team, 10th Mountain Division.</para>
+	</description>
+  </award>
+    <award>
+	<title>Army Certification of Achievement</title>
+	<organization>US Army</organization>
+	<date><year>2006</year></date>
+  </award>
+    <award>
+	<title>Army Good Conduct Medal (2)</title>
+	<organization>US Army</organization>
+	<date><year>2007</year></date>
+  </award>
+</awards>
+
+<lastModified>
+	<date>
+		<dayOfMonth>22</dayOfMonth>
+		<month>January</month>
+		<year>2010</year>
+		</date>
+</lastModified>
+
+  <copyright>
+    <year>2010</year>
+    <name>
+      <firstname>Matthew</firstname>
+      <surname>Levandowski</surname>
+    </name>
+    <legalnotice>
+      <para>
+        All rights reserved. This document may not be changed or distributed
+        without permission.
+      </para>
+    </legalnotice>
+  </copyright>
+
+  
+</resume>
+
+<!--
+Local Variables:
+compile-command: "SP_CHARSET_FIXED=YES SP_ENCODING=XML nsgmls -wxml -mdeclaration/xml.soc -gues resume.xml"
+End;
+-->
