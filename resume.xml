@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- resume.xml Copyright 2010 Matthew Levandowski <levandma@mail.gvsu.org> -->
 <!DOCTYPE resume PUBLIC "-//Sean Kelly//DTD Resume 1.5.1//EN"
-  "/usr/share/sgml/xml-resume-library/dtd/resume.dtd">
+  "./dtd/resume.dtd">
 
 <resume>
   <header>
     <name id="levandma">
-      <title>SPC</title>
+      <title>Specialist</title>
       <firstname>Matthew</firstname>
       <middlenames>A</middlenames>
       <surname>Levandowski</surname>
@@ -26,7 +26,7 @@
   </header>
   
   <objective targets="information technology">
-  <para>Experienced military leader with documented success in responsible and challenging positions; seeking a position to gain work related experience in order to progress to higher level positions. Proven record of accomplishment, mission-critical decision making, time-management, and extensive teamwork abilities; with the ability to develop and implement effective action plans.  I have fulfilled a tour of duty in Afghanistan and four years of military service with an honorable discharge. 
+  <para>Experienced military leader with documented success in responsible and challenging positions; seeking a position to gain work related experience in order to progress to higher level positions. I have a proven record of accomplishment, mission-critical decision making, time-management, and extensive teamwork abilities; with the ability to develop and implement effective action plans.  I have fulfilled a tour of duty in Afghanistan and four years of military service with an honorable discharge. 
     </para>
   </objective>
 
@@ -48,7 +48,7 @@
 	</to>
       </period>
 	<description>
-      <para>Train on various soldier skills and wheeled truck driving.  Plan and execute regular training excersises in support of the 180th Transportation Company.
+      <para>Train on various soldier skills and wheeled truck driving.  Plan and execute regular training exercises in support of the 180th Transportation Company.
       </para>
     </description>
     </job>
@@ -115,7 +115,7 @@
 	  </date></to>
       </period>
       <description>
-	<para>Deployed to <emphasis>Afghanistan</emphasis> in support of <emphasis>Operation Enduring Freedom</emphasis> as a communication specialist for a support battion with a company sized element with more than 150 employees.
+	<para>Deployed to <emphasis>Afghanistan</emphasis> in support of <emphasis>Operation Enduring Freedom</emphasis> as a communication specialist for a support battalion with a company sized element with more than 150 employees.
 	</para>
       </description>
       <achievements>
@@ -151,10 +151,10 @@
       </description>
       <achievements>
     <achievement>
-    Participated in sucessfull training at JROTC in Fort Polk, Loiusiana.
+    Participated in successful training at JROTC in Fort Polk, Louisiana.
     </achievement>
     <achievement>
-    Conducted numerous training excersises successfully in light infantry.
+    Conducted numerous training exercises successfully in light infantry.
     </achievement>
     </achievements>
     </job>
@@ -299,7 +299,7 @@
 	<organization>National Honors Society</organization>
 </membership>
 <membership>
-	<organization>Student Veteran Organiation</organization>
+	<organization>Student Veteran Organization</organization>
 </membership>
 <membership>
 	<organization>CS Study Group</organization>
@@ -360,8 +360,8 @@
 
 <lastModified>
 	<date>
-		<dayOfMonth>22</dayOfMonth>
-		<month>January</month>
+		<dayOfMonth>05</dayOfMonth>
+		<month>April</month>
 		<year>2010</year>
 		</date>
 </lastModified>
