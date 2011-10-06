@@ -1,22 +1,29 @@
-% resume.tex
-%
-% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
-% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
-% (c) 2007-2010 Todd C. Miller <Todd.Miller@courtesan.com> http://www.courtesan.com/todd
-% (c) 2011 Matthew A. Levandowski <levandowski.matthew@gmail.com>
-%
-% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+\documentclass[a4paper,10pt]{article}
 
-\documentclass[letterpaper,11pt]{article}
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec} 					%for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip} 	%other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{fullpage}
+\usepackage{titlesec}					%custom \section
+\usepackage[absolute]{textpos}
 
-%-----------------------------------------------------------
-\usepackage[empty]{fullpage}
-\usepackage{color}
-\definecolor{mygrey}{gray}{0.80}
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
+%Setup hyperref package, and colors for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont{Luxi Sans}
+
+%Title Sections
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{2pt}{2pt}
+
+%-margins
 % Adjust margins to 0.5in on all sides
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
@@ -24,138 +31,181 @@
 \addtolength{\topmargin}{-0.5in}
 \addtolength{\textheight}{1.0in}
 
-%-----------------------------------------------------------
-%Custom commands
-\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
-\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
-\newcommand{\ressubheading}[4]{
-\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
-		\textbf{#1} & #2 \\
-		\textit{#3} & \textit{#4} \\
-\end{tabular*}\vspace{-6pt}}
-%-----------------------------------------------------------
+% set paper indents and lengths
+\setlength{\TPHorizModule}{30mm}
+\setlength{\TPVertModule}{\TPHorizModule}
+\textblockorigin{2mm}{0.65\paperheight}
+\setlength{\parindent}{0pt}
 
+%Styling Itemizations
+\usepackage{enumitem}
+\renewcommand{\labelitemi}{\textcolor{lightg}{\symbol{"F6B9}}}
+% Bullets
+\definecolor{noteone}{HTML}{999999}
+\definecolor{notetwo}{HTML}{848484}
+\definecolor{notethree}{HTML}{424242}
+\definecolor{notefour}{HTML}{212121}
+\definecolor{notefive}{HTML}{000000}
+ 
+\newcommand{\fivenotes}{%
+\textcolor{noteone}{\symbol{"2022}}
+\textcolor{notetwo}{\symbol{"2022}}
+\textcolor{notethree}{\symbol{"2022}}
+\textcolor{notefour}{\symbol{"2022}}
+\textcolor{notefive}{\symbol{"2022}}
+}
+\newcommand{\fournotes}{%
+\textcolor{noteone}{\symbol{"2022}}
+\textcolor{notetwo}{\symbol{"2022}}
+\textcolor{notethree}{\symbol{"2022}}
+\textcolor{notefour}{\symbol{"2022}}
+\textcolor{white}{\symbol{"2022}}
+}
+\newcommand{\threenotes}{%
+\textcolor{noteone}{\symbol{"2022}}
+\textcolor{notetwo}{\symbol{"2022}}
+\textcolor{notethree}{\symbol{"2022}}
+\textcolor{white}{\symbol{"2022}}
+\textcolor{white}{\symbol{"2022}}
+}
+\newcommand{\twonotes}{%
+\textcolor{noteone}{\symbol{"2022}}
+\textcolor{notetwo}{\symbol{"2022}}
+\textcolor{white}{\symbol{"2022}}
+\textcolor{white}{\symbol{"2022}}
+\textcolor{white}{\symbol{"2022}}
+}
+\newcommand{\onenote}{%
+\textcolor{noteone}{\symbol{"2022}}
+\textcolor{white}{\symbol{"2022}}
+\textcolor{white}{\symbol{"2022}}
+\textcolor{white}{\symbol{"2022}}
+\textcolor{white}{\symbol{"2022}}
+}
 
+%--alignment for dates and columns
+\newlength{\datebox}
+%\settowidth{\datebox}{Summer 2007}
+\setlength{\datebox}{.8cm} % string of text doesnt work here
+\typeout{\the\datebox} % outputs <dimension>pt
+
+%--------------------BEGIN DOCUMENT----------------------
 \begin{document}
 
-\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
-\textbf{\large Matthew Levandowski}  & 315.286.2383 (mobile)\\
-531 Parkside Ave NW &  levandowski.matthew@gmail.com \\
-Grand Rapids, MI  49534& http://www2.gvsu.edu/\textasciitilde levandma/\\
-\end{tabular*}
-\\
+\pagestyle{empty} % non-numbered pages
 
-\vspace{0.1in}
+\font\fb=''[cmr10]'' %for use with \LaTeX command
 
-\resheading{Objective}\vspace{0.1in}
-Experienced military leader with documented success in responsible and challenging positions; seeking a position to gain work related experience in order to progress to higher level positions. I have a proven record of accomplishment, mission-critical decision making, time-management, and extensive teamwork abilities; with the ability to develop and implement effective action plans. I have fulfilled a tour of duty in Afghanistan and four years of military service with an honorable discharge.
+%--------------------TITLE-------------
+\par{\centering
+		{\Huge Matthew Levandowski
+	}\bigskip\par}
 
-\vspace{0.1in}
+%--------------------SECTIONS-----------------------------------
+\begin{tabular}{l l}
+    \Large\Pointinghand &  1041 College Ave NE, Grand Rapids, MI 49503 \\
+    \Large\Telefon &  (315) 286 2383\\
+    \Large\Letter  &  \href{mailto:levandowski.matthew@gmail.com}{levandowski.matthew\MVAt gmail.com}\\
+    \Mundus & \href{http://www2.gvsu.edu/~levandma/}{http://www2.gvsu.edu/~levandma/}
+\end{tabular}
 
-\resheading{Education}
-\begin{itemize}
-\item
-	\ressubheading{Grand Valley State University}{Allendale, MI}{B.A.Sc., Information Systems (Grades: 80\%)}{Sep. 2009 - Present}
-	\begin{itemize}
-		\resitem{Relevant courses: Java programming, Data Structures and Algorithms, Digital Design, Computer Architecture, C programming, System Programming}
-	\end{itemize}
+\section{Objective}
+\begin{tabular}{p{18cm}}
+  \textsc{Experienced military leader with documented success in responsible and challenging positions. Proven record of accomplishment, mission-critical decision making, time-management, and teamwork abilities; with the ability to develop and implement effective action plans. Fulfilled a tour of duty in Afghanistan and four years of military service with an honorable discharge.}
+\end{tabular}
 
-\item
+%Section: Work Experience
+\section{Work Experience}
+\begin{tabular}{r|p{15.5cm}}
+ \parbox{\datebox} \textsc{Nov 2009} & \textbf{Kohl's Department Store \hfill Grandville, MI } \\ \textsc{Jun 2011}&\emph{Advertisement Setter and Warehouse Merchandise Management}
+   \\&\small{Inventoried and assessed advertisement pricing and policies for entire store.}
+   \\&\small{Assisted and interacted with customers.}  
+   \\&\small{Inventoried and managed offs-site warehouse merchandise. }
+ \\\multicolumn{2}{c}{} \\
 
-\vspace{0.1in}
+\textsc{Mar - Nov 2008} & \textbf{Shareco Communications \hfill Walker, MI }\\&\emph{Telecommunications Line Installer} \\&\small{ Responsible for the installation, repair, and termination of cabling in commercial and residential business.}
+\\&\small{Proficient in the use of  CAT5E, CAT6, 100-pair copper wire, and standard RG5 coaxial cable.}
+\\&\small{Installation and splicing of fiber optic lines in commercial settings.}
+ \\\multicolumn{2}{c}{} \\
+\end{tabular}
 
-	\ressubheading{Muskegon Community College}{Muskegon, MI}{A.S.A., Science and Arts }{2001-2006}
-	\begin{itemize}
-		\resitem{Finished degree after completing 4 year Active Duty contract with the U.S. Army.}
-		\resitem{Relevant courses: Physics, Calculus, Statistics, Electroacoustic music}
-	\end{itemize}
+%Section: Education
+\section{Education}
+\begin{tabular}{r|p{15.5cm}}	
+ \parbox{\datebox}\textsc{Aug 2009} & \textbf{Grand Valley State University \hfill Allendale, MI}\\ \textsc{Aug 2012}
+ &\emph{Bachelor of Computer Science}
+ \\&\small{Minor: Business}\\&\small{Relevant Courses: Java, C, SQL, Data Structures and Algorithms, Computer Architecture, System Programming.}
+ \\\multicolumn{2}{c}{} \\
 
-\end{itemize}
+\textsc{Nov 2008} & \textbf{ Muskegon Community College \hfill Muskegon, MI} \\ \textsc{Aug 2009} & \emph{Associates of Science and Arts}
+ \\&\small{Finished degree after completing four years of Active Duty in the US Army.}
+ \\&\small{Relevant Courses: Physics, Calculus, Statistics, Electro-acoustic Music}
+\end{tabular}
 
-\resheading{Work Experience}
-\begin{itemize}
-\item 
-	\ressubheading{Kohls Department Store}{Muskegon, MI}{Advertisement Setter / Warehouse}{Nov 2009 - Present}
-	\begin{itemize}
-		\resitem{Work with other associates as a team to inventory and assess advertisement pricing and policies for entire store.}
-		\resitem{Customer assistance and interaction}
-		\resitem{Warehouse inventory and offsite merchandise management}
-	\end{itemize}
-\item
+\hfill
 
-\vspace{0.1in}
+%Section: Programming Skills
+\section{Programming Languages}
+\begin{tabular}{r r r r r r r r}
+  \textsc{Java}\small\emph{\fournotes} & c \small\emph{\fournotes} & bash \small\emph{\fournotes} & html \small\emph{\fournotes} & sql \small\emph{\threenotes}
+   & ruby \small\emph{\threenotes}  & latex  \small\emph{\threenotes} & python \small\emph{\twonotes}
+\end{tabular}
 
-	\ressubheading{180th Transportation Co., U.S. Army Reserve}{Muskegon, MI}{25F Communication Specialist}{Aug 2009 - Aug. 2010}
-	\begin{itemize}
-		\resitem{Train on various soldier skills and wheeled truck driving. Plan and execute regular training exercises in support of the 180th Transportation Company.}
-	\end{itemize}
-\item
+\section{Operating Systems}
+\begin{tabular}{r r r r r r }
+ \textsc{linux}\small\emph{\fivenotes} & windows \small\emph{\fournotes} & unix\small\emph{\fournotes} & solaris workstations \small\emph{\threenotes} & mac osx\small\emph{\threenotes}
+\end{tabular}
 
-\vspace{0.1in}
+%Section: Personal Skills
+\section{Personal Skills}
+ \begin{tabular}{p{15.5cm}}
+ \textsc{Software configuration management, strong verbal and written communication skills, excellent troubleshooting and problem solving skills.}
+\end{tabular}
 
-	\ressubheading{Shareco Communications}{Grand Rapids, MI}{Telecommunications Line Installer}{Mar. 2008 - Nov. 2008}
-	\begin{itemize}
-		\resitem{I was responsible for the installation, repair, and termination of cabling in commercial and residential business.}
-		\resitem{Proficient in the use of  CAT5E, CAT6, 100-pair copper wire, and standard RG5 coaxial cable.}
-		\resitem{Installation and splicing of fiber optic lines in commercial settings.}
-	\end{itemize}
+\section{Interests and Activities}
+Academic: Ubiquitous computing, Telecommunications, Operating Systems design, PC Repair\\
+Memberships: GVSU Student Veterans Organization, Computer Science Study Group, Total Trek Quest (running coach)\\
+Interests: Running, Soccer, Travel, Hiking
 
-\item
+\section{Military Experience}
+\begin{tabular}{r|p{15.5cm}}
+ \textsc{Aug 2009-2010} & \textbf{180\textsuperscript{th} Transportation Company \hfill U.S. Army Reserve } \\&\emph{88M Motor Transport Operater}\\&\small{Trained on large wheeled truck operation and maintenance.}
+ \\&\small{Planed and executed regular training exercises in support of the 180th Transportation Company.}
+ \\\multicolumn{2}{c}{} \\
 
-\pagebreak
-	\ressubheading{710 BSB, 3rd BCT, 10th MTN DIV, U.S. Army}{Afghanistan}{Communications Specialist OEF VII}{Feb. 2006 - Jul. 2007}
-	\begin{itemize}
-		\resitem{Deployed in support of Operation Enduring Freedom as a communication specialist for a company sized element with more than 150 employees. }
-		\resitem{Participated in the Joint Task Force as security for the occupying NATO and ISAF forces.}
-		\resitem{Participated in the successful repatriation of a US Soldier in a Search and Rescue Mission.}
-		\resitem{Maintained and Installed radio communication and navigation devices in armored vehicles.}
-	\end{itemize}
+\textsc{2004 - 2008} & \textbf{710 Brigade Support Batallion, 3\textsuperscript{rd} BCT, 10\textsuperscript{th} Mountain Division \hfill U.S. Army }\\&\emph{25F Network Switching Systems Operator / Maintainer} \\&\small{ Responsible for the installation, repair, and termination of cabling in commercial and residential business.}
+\\&\small{Deployed 18 months in support of Operation Enduring Freedom, Afghanistan for a company with more than 150 soldiers.}
+\\&\small{Directly responsible for the installation, maintenance, and repair of over half a million dollars of communication equipment.}
+\\&\small{Participated in the Joint Task Force as security for the occupying NATO and ISAF forces.}
+\\&\small{Successfully repatriated a US Soldier in a Search and Rescue Mission in Afghanistan.}
+ \\\multicolumn{2}{c}{} \\
+\end{tabular}
 
-\item
-	\ressubheading{10th Mountain Division, U.S. Army}{Fort Drum, NY}{25F Network Switching Systems Operator / Maintainer }{Aug. 2005 - Feb. 2006}
-	\begin{itemize}
-		\resitem{Directly responsible for the installation, maintenance, and repair of over half a million dollars of communication equipment for a company with over 150 soldiers.}
-		\resitem{Participated in successful training at JROTC in Fort Polk, Louisiana.}
-		\resitem{Conducted numerous training exercises successfully in light infantry.}
-	\end{itemize}
+%Section: Military Awards
+\section{Military Awards}
+\begin{tabular}{l|p{15.5cm}}
+ \textsc{Secretary of Defense} & Joint Service Achievement Medal 
+  \\ \textsc{NATO} & ISAF Medal Afghanistan 
+  \\ \textsc{CJTF-76} & Joint Meritorious Unit Award 
+  \\ \textsc{US ARMY} & Army Commendation Medal x2 
+  \\ \textsc{US ARMY} & Army Certificate of Achievement 
+\end{tabular} 
 
-\end{itemize}
+\section{Military Skills}
+\begin{tabular}{r r r }
+ \textsc{SINCGARS Radio}\small\emph{\fivenotes} & SMART-T Satellite \small\emph{\fournotes} & General Dynamics C4 - MSE Network Systems\small\emph{\fournotes} \\ COMSEC devices\small\emph{\fournotes} & PLGRs and MTS \small\emph{\threenotes} & Switching System Nodes (SEN LEN etc) \small\emph{\threenotes}
+\end{tabular}
 
-\resheading{Military Awards}
-	\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
-		Joint Service Achievement Medal (Secretary of Defense) & May 2007\\
-		ISAF Medal Afghanistan (NATO) & 2007\\
-		Joint Meritorious Unit Award (CJTF-76) & 2007\\
-		Army Commendation Medal (U.S. Army) & 2007\\
-		Army Good Conduct Medal (x2) (U.S. Army) & 2007\\
-		Army Certification of Achievement (U.S. Army) & 2006\\
-\end{tabular*}
+%Section: Security Clearance
+\section{Security Clearance}
+ \begin{tabular}{p{15.5cm}}
+ \textsc{Secret - 2008 - 2012}
+\end{tabular}
 
-\resheading{Security Clearance}
-	\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
-		Secret (US Army) & Exp. 2012 \\
-\end{tabular*}
-
-\resheading{Skills}
-
-\begin{description}
-\item[Programming:]
-Java, C/C++, Ruby, Python, BASH, HTML, CSS, SQL
-\item[Operating Systems:]
-Linux (Debian, Gentoo, ArchLinux), MacOSX, Solaris, UNIX, Windows 95/98/NT/2000/XP/VISTA/WIN 7
-\item[Applications:]
-Vim, Eclipse, \LaTeX, MS Office 2007, Adobe Photoshop/Premiere
-\item[Military Skills:]
-General Dynamics C4 - MSE Network Systems, COMTECH MTS, Plugr, and BlueForce Tracker GPS devices, COMSEC devices, SIPR and NIPR networks, SINCGARS Radios, SMART-T Satellite Communications, Cisco routers
-\item[Miscellaneous:]
-software configuration management, strong verbal and written communication skills, excellent troubleshooting skills, exceptional problem solving skills, good teams skills
-\end{description}
-
-\resheading{Interests}
-
-\begin{description}
-\item[Academic:] Ubiquitous Computing, RF/wireless, Operating Systems design / maintenance, Computer Security, Information Assurance
-\item[Memberships:] Student Veteran Organization, CS Study Group, Total Trek Quest
-\end{description}
+%Section: References
+\section{References}
+ \begin{tabular}{p{15.5cm}}
+ \textsc{\emph{References are available upon request}}
+\end{tabular}
 
 \end{document}
