@@ -1,0 +1,140 @@
+%---------------------------------------------------------------------------
+\documentclass
+%---------------------------------------------------------------------------
+  [fontsize=12pt,%%          Font size
+%---------------------------------------------------------------------------
+% Type area
+   paper=a4,%%               Sheet size
+   enlargefirstpage=on,%%    Enlarge the first page
+   pagenumber=headright,%%   Page number on the top right of the header
+%---------------------------------------------------------------------------
+% Layout
+   headsepline=on,%%         Line below the page number
+   parskip=half,%%           Space between paragraphs
+%---------------------------------------------------------------------------
+% Letterhead and address
+   fromalign=right,%%        Positioning of the letterhead
+   fromphone=on,%%           Phone number in the sender's area
+   fromrule=on,%%           Line below the sender's area
+   fromfax=off,%%            Fax number
+   fromemail=on,%%          Mail address
+   fromurl=on,%%            Homepage
+   fromlogo=off,%%           Company logo
+   addrfield=on,%%           Adress field for window envelopes
+   backaddress=off,%%         ... with sender address
+   subject=beforeopening,%%  Positioning of the subject
+   subject=titled,
+   locfield=narrow,%%        Additional field for the sender
+   foldmarks=on,%%           Folding mark
+   numericaldate=off,%%      Numerical date
+   refline=narrow,%%         Spread of the reference line in the type area
+%---------------------------------------------------------------------------
+% Formatting
+   draft=on%%                Draft mode
+]{scrlttr2}
+%---------------------------------------------------------------------------
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{url}
+\usepackage{fontspec}
+\usepackage{marvosym}
+
+%---------------------------------------------------------------------------
+% Fonts
+\setkomafont{fromname}{\sffamily \LARGE}
+\setkomafont{fromaddress}{\sffamily}%%    Instead of \small
+\setkomafont{pagenumber}{\sffamily}
+\setkomafont{subject}{\mdseries}
+\setkomafont{backaddress}{\mdseries}
+\usepackage{mathptmx}%%                   Font Times
+%\usepackage{mathpazo}%%                  Font Palatino
+%\setkomafont{fromname}{\LARGE}
+% === font settings
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont {Luxi Sans}
+\setsansfont {Luxi Sans}
+
+%set the font size and leading
+\renewcommand{\normalsize}{\fontsize{12.5}{17}\selectfont}
+%---------------------------------------------------------------------------
+\begin{document}
+%---------------------------------------------------------------------------
+% Letter style and positioning of the letterhead
+\LoadLetterOption{DIN} %% or: DINmtext, SN, SNleft, KOMAold.
+\makeatletter
+\@setplength{firstheadvpos}{20mm}
+\@setplength{firstheadwidth}{\paperwidth}
+\ifdim \useplength{toaddrhpos}>\z@
+  \@addtoplength[-2]{firstheadwidth}{\useplength{toaddrhpos}}
+\else
+  \@addtoplength[2]{firstheadwidth}{\useplength{toaddrhpos}}
+\fi
+\@setplength{foldmarkhpos}{6.5mm}
+\@setplength{refaftervskip}{-\baselineskip}% date on same line as subject
+\makeatother
+%---------------------------------------------------------------------------
+% Sender information
+\setkomavar{fromname}{Matthew Levandowski}
+\setkomavar{fromaddress}{1041 College Ave NE\\Grand Rapids\\MI 49503}
+\setkomavar{place}{GVSU}
+\setkomavar{subject}{Internship}
+\setkomavar{fromphone}{315.286.2383}
+\renewcommand{\phonename}{Mobile}
+\setkomavar{fromemail}{levandowski.matthew@gmail.com}
+\setkomavar{fromurl}{http://www2.gvsu.edu~/levandma/}
+\setkomavar{backaddressseparator}{. }
+\setkomavar{signature}{Matthew Levandowski}
+%\setkomavar{location}{\\[8ex]\raggedleft{\footnotesize{\usekomavar{fromaddress}\\Phone: \usekomavar{fromphone}}}}%% Beside the address field
+%---------------------------------------------------------------------------
+\firsthead{\centering{\addfontfeature{LetterSpace=20.0}\fontsize{36}{36}\selectfont\scshape \usekomavar{fromname}}\\[5mm]
+\fontsize{21}{21}\selectfont\scshape Programmer and Software Designer
+}
+%---------------------------------------------------------------------------
+%\firstfoot{Footer}
+%---------------------------------------------------------------------------
+% Fields of business line
+%\setkomavar{place}{Place}
+%\setkomavar{placeseparator}{, }
+\setkomavar{date}{\today}
+%\setkomavar{yourmail}{1. 1. 2009}%%  'Your writing ...'
+%\setkomavar{yourref} {abcdefg}%%     'Your reference ...'
+%\setkomavar{myref}{}%%               'Our reference ...'
+%\setkomavar{invoice}{123}%%          'Invoice number ...'
+%\setkomavar{phoneseparator}{}
+%---------------------------------------------------------------------------
+% Shipping notice
+%\setkomavar{specialmail}{Recommand\'{e} avec avis de r\'{e}ception}
+%---------------------------------------------------------------------------
+% Redefine enclosure
+\renewcommand{\enclname}{Enclosure}
+\setkomavar{enclseparator}{: }
+%---------------------------------------------------------------------------
+% Page style
+\pagestyle{plain}%% No header
+%---------------------------------------------------------------------------
+\begin{letter}{
+Clean Logix LLC\\
+5000 W. Greenbroooke Dr SE\\
+Grand Rapids\\
+MI 49502}
+%---------------------------------------------------------------------------
+% Further options
+\KOMAoptions{%%
+}
+%---------------------------------------------------------------------------
+%\setkomavar{subject}{Subject}
+%---------------------------------------------------------------------------
+\opening{Dear Recruiter,}
+
+\par I am currently a Senior at Grand Valley State University majoring in Computer Science and want to minor in Business as well. I have served 4 years in the United States Army as a 25F Network Switching Systems Operator and communication specialist, and I am currently in the Army Reserve for the following year until my contract time is up.\par My job experience so far has been focused on communication equipment and networking.  I believe my skills and education will pair up very well with your needs.  I am interested in either a development or an information technology position upon graduation at GVSU. \par I would appreciate the opportunity to discuss what positions you man have.  If you have any other questions or need more information from me I can provide those as well.  \par Thank you for your time.
+       
+\closing{Regards}
+%---------------------------------------------------------------------------
+%\ps{PS:}
+\encl{Attached is a copy of my resume.}
+%\cc{}
+%---------------------------------------------------------------------------
+\end{letter}
+%---------------------------------------------------------------------------
+\end{document}

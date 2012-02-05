@@ -1,0 +1,13 @@
+\ProvidesFile{levandowski.lco}[2012/02/01]
+
+% ==============================================
+%  PERSONAL DATA
+% ==============================================
+\setkomavar{fromname}{Matthew Levandowski}
+\setkomavar{fromaddress}{1041 College Ave NE\\Grand Rapids\\MI 49503}
+\setkomavar{fromphone}{315.286.2383}
+\setkomavar{fromemail}{levandowski.matthew@gmail.com}
+\setkomavar{fromurl}{http://www2.gvsu.edu~/levandma/}
+\setkomavar{subject}{Internship}
+\setkomavar{place}{GVSU}
+\setkomavar{signature}{Matthew Levandowski}
