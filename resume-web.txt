@@ -10,9 +10,9 @@ Experienced military leader with documented success in responsible and challengi
 Education
 
    *  Grand Valley State University Allendale, MI
-      B.A.Sc., Information Systems (Grades: 80%) Sep. 2009 - Present
+      B.A.Sc., Information Systems (Grades: 80%) Sep. 2009 - Dec 2012
          -- Relevant courses: Java programming, Data Structures and Algorithms, Digital Design, Computer
-            Architecture, C programming, System Programming
+            Architecture, C programming, System Programming, Web Design, UI Design
 
    *   Muskegon Community College Muskegon, MI
        A.S.A., Science and Arts 2001-2006
@@ -21,8 +21,14 @@ Education
 
 Work Experience
 
+   * Spectrum Health   Grand Rapids, MI
+     Application System Analyst, May 2012 - Mar 2013
+        -- Troubleshooted and built automated FTP processes to and from external vendors carrying sensitive data
+        -- Troubleshooted and supported Intersystems Ensemble integration interfaces between multiple business pro-
+cesses
+
    * Clean Logix  Grand Rapids, MI
-     Software Engineer Nov 2011 - Present
+     Software Engineer Nov 2011 - May 2012
          -- Programmed in Ruby for a linux embedded device.
          -- Designed interfaces using Nokia's Qt graphical user interface toolkit.
          -- Written Software Requirements Specifications and UML Designs    
@@ -67,12 +73,12 @@ Secret (US Army) Exp. 2012
 
 Skills
 
-Programming: Java, C/C++, Ruby, Python, BASH, HTML, CSS, SQL
+Programming: Java, C/C++, Ruby, Python, BASH, HTML, CSS, SQL, JQUERY, JAVASCRIPT
 
 Operating Systems: Linux (Debian, Gentoo, ArchLinux), MacOSX, Solaris, UNIX, 
 		   Windows95/98/NT/2000/XP/VISTA/WIN 7
                                    
-Applications: Vim, Eclipse, LTEX, MS Office 2007, Adobe Photoshop/Premiere
+Applications: Vim, Eclipse, LTEX, MS Office 2007, Adobe Photoshop/Premiere, Apache, NGINX, GUNICORN
 
 Military Skills: General Dynamics C4 - MSE Network Systems, COMTECH MTS, Plugr, and BlueForce
      Tracker GPS devices, COMSEC devices, SIPR and NIPR networks, SINCGARS Radios, SMART-T
