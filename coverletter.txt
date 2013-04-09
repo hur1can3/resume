@@ -12,18 +12,17 @@ April 6, 2013
 
 Dear Sir or Madam,
 
-I am interested in a Software Developer position with AthenaHealth. I found
-the job on the joelonsoftware.com Job Board. I love to read his blog and he has
-many insightful article on software development and the software culture.
+I am interested in a Software Developer position with Dematic. I heard about Dematic from a former classmate at Grand Vallye State Univeristy, and though it might be a great place to work.
 
 I am a recent graduate at Grand Valley State University with a Bachelor degree in
-Computer Science. Now I am looking for a position that I am passionate about web
-and front end development. Your company is very apt to the types of technologies
+Computer Science. Now I am looking for a position that I am passionate about software engineer work. Your company is very apt to the types of technologies
 I am looking forward to working with in my career and the culture and mix of people
 would be a great opportunity for me.
 
-At Spectrum Health I interned as an application analyst.  From there I went to a full time System Analsyst, but the software we used was outdated and I have a passion for developing new technologies. I am always looking to
-learn more development frameworks and technologies.  I would appreciate the opportunity to discuss what positions you man have.
+At CleanLogix I have done user interface design with Ruby and QT,and also helped
+develop a website front-end with PHP and JQuery.  I helped program a backend protocal framework utilizing the CAN protocal for communicaiton between air powered pnuematic pump controllers for chemical dispensing. I  also have done formal school training with projects in c, c++, java, and web design, and my Senior Capstone Course
+involved a Data Mining application with Django and a python flask backend, check
+it out at avalanche.evavro.com. I would appreciate the opportunity to discuss what positions you man have available for a recent college graduate.
 
 Best Regards,
 Matthew Levandowski
